@@ -46,7 +46,7 @@ public class ElementMaterials {
                 .build();
 
         Antimony = new Material.Builder(4, gregtechId("antimony"))
-                .ingot().fluid()
+                .ingot().fluid().ore()
                 .color(0xDCDCF0).iconSet(SHINY)
                 .flags(MORTAR_GRINDABLE)
                 .element(Elements.Sb)
@@ -60,7 +60,7 @@ public class ElementMaterials {
                 .build();
 
         Arsenic = new Material.Builder(6, gregtechId("arsenic"))
-                .dust().fluid()
+                .dust().fluid().ore()
                 .color(0x676756)
                 .element(Elements.As)
                 .fluidTemp(887)
@@ -91,7 +91,7 @@ public class ElementMaterials {
                 .build();
 
         Bismuth = new Material.Builder(11, gregtechId("bismuth"))
-                .ingot(1).fluid()
+                .ingot(1).fluid().ore()
                 .color(0x64A0A0).iconSet(METALLIC)
                 .element(Elements.Bi)
                 .fluidTemp(545)
@@ -157,7 +157,7 @@ public class ElementMaterials {
                 .build();
 
         Chrome = new Material.Builder(22, gregtechId("chrome"))
-                .ingot(3).fluid()
+                .ingot(3).fluid().ore()
                 .color(0xEAC4D8).iconSet(SHINY)
                 .flags(EXT_METAL, GENERATE_ROTOR, GENERATE_DOUBLE_PLATE)
                 .element(Elements.Cr)
@@ -422,7 +422,7 @@ public class ElementMaterials {
                 .build();
 
         Manganese = new Material.Builder(61, gregtechId("manganese"))
-                .ingot().fluid()
+                .ingot().fluid().ore()
                 .color(0xCDE1B9)
                 .flags(STD_METAL, GENERATE_FOIL, GENERATE_BOLT_SCREW)
                 .element(Elements.Mn)
@@ -669,7 +669,7 @@ public class ElementMaterials {
                 .build();
 
         Silicon = new Material.Builder(99, gregtechId("silicon"))
-                .ingot().fluid()
+                .ingot().fluid().ore()
                 .color(0x3C3C50).iconSet(METALLIC)
                 .flags(GENERATE_FOIL)
                 .element(Elements.Si)
@@ -760,8 +760,8 @@ public class ElementMaterials {
                 .fluidTemp(505)
                 .build();
 
-        Titanium = new Material.Builder(113, gregtechId("titanium")) // todo Ore? Look at EBF recipe here if we do Ti ores
-                .ingot(3).fluid()
+        Titanium = new Material.Builder(113, gregtechId("titanium"))
+                .ingot(3).fluid().ore()
                 .color(0xDCA0F0).iconSet(METALLIC)
                 .flags(EXT2_METAL, GENERATE_DOUBLE_PLATE, GENERATE_ROTOR, GENERATE_SMALL_GEAR, GENERATE_GEAR, GENERATE_FRAME)
                 .element(Elements.Ti)
@@ -780,7 +780,7 @@ public class ElementMaterials {
                 .build();
 
         Tungsten = new Material.Builder(115, gregtechId("tungsten"))
-                .ingot(3).fluid()
+                .ingot(3).fluid().ore()
                 .color(0x323232).iconSet(METALLIC)
                 .flags(EXT2_METAL, GENERATE_SPRING, GENERATE_SPRING_SMALL, GENERATE_FOIL, GENERATE_GEAR, GENERATE_DOUBLE_PLATE)
                 .element(Elements.W)
@@ -792,7 +792,7 @@ public class ElementMaterials {
                 .build();
 
         Uranium238 = new Material.Builder(116, gregtechId("uranium"))
-                .ingot(3).fluid()
+                .ingot(3).fluid().ore()
                 .color(0x32F032).iconSet(METALLIC)
                 .flags(EXT_METAL)
                 .element(Elements.U238)
@@ -800,7 +800,7 @@ public class ElementMaterials {
                 .build();
 
         Uranium235 = new Material.Builder(117, gregtechId("uranium_235"))
-                .ingot(3).fluid()
+                .ingot(3).fluid().ore()
                 .color(0x46FA46).iconSet(SHINY)
                 .flags(EXT_METAL)
                 .element(Elements.U235)
@@ -808,7 +808,7 @@ public class ElementMaterials {
                 .build();
 
         Vanadium = new Material.Builder(118, gregtechId("vanadium"))
-                .ingot().fluid()
+                .ingot().fluid().ore()
                 .color(0x323232).iconSet(METALLIC)
                 .element(Elements.V)
                 .blastTemp(2183, GasTier.MID)
@@ -873,7 +873,7 @@ public class ElementMaterials {
                 .build();
 
         Neutronium = new Material.Builder(127, gregtechId("neutronium"))
-                .ingot(6).fluid()
+                .ingot(6).fluid().ore()
                 .color(0xFAFAFA)
                 .flags(EXT_METAL, GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_GEAR, GENERATE_LONG_ROD, GENERATE_DOUBLE_PLATE)
                 .element(Elements.Nt)
