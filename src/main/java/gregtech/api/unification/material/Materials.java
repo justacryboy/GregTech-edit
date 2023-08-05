@@ -769,4 +769,10 @@ public class Materials {
     public static Material BasalticMineralSand;
     public static Material HSSE;
     public static Material HSSS;
+
+    /**
+     * Edit Materials
+     */
+    public static Material PTMetallicPowder;
+	public static Material PDMetallicPowder;
 }
