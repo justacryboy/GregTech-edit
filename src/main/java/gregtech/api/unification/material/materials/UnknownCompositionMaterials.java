@@ -518,11 +518,5 @@ public class UnknownCompositionMaterials {
 
         PCBCoolant = new Material.Builder(1650, gregtechId("pcb_coolant"))
                 .fluid().color(0xD5D69C).build();
-        
-        PTMetallicPowder = new Material.Builder(1517, gregtechId("platinum_metallic_powder"))
-                .dust().ore(2, 1).color(0xFFFFC8).iconSet(METALLIC).build();
-
-		PDMetallicPowder = new Material.Builder(1518, gregtechId("palladium_metallic_powder"))
-                .dust().ore(4, 1).color(0x808080).iconSet(METALLIC).build();
     }
 }
