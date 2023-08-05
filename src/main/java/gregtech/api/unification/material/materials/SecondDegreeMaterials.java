@@ -27,13 +27,13 @@ public class SecondDegreeMaterials {
                 .build();
 
         Perlite = new Material.Builder(2001, gregtechId("perlite"))
-                .dust(1)
+                .dust(1).ore()
                 .color(0x1E141E)
                 .components(Obsidian, 2, Water, 1)
                 .build();
 
         Borax = new Material.Builder(2002, gregtechId("borax"))
-                .dust(1)
+                .dust(1).ore()
                 .color(0xFAFAFA).iconSet(FINE)
                 .components(Sodium, 2, Boron, 4, Water, 10, Oxygen, 7)
                 .build();
@@ -448,7 +448,7 @@ public class SecondDegreeMaterials {
                 .build();
 
         RarestMetalMixture = new Material.Builder(2059, gregtechId("rarest_metal_mixture"))
-                .dust()
+                .dust().ore()
                 .color(0x832E11).iconSet(SHINY)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Iridium, 1, Osmium, 1, Oxygen, 4, Water, 1)
