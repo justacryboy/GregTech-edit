@@ -275,7 +275,7 @@ public class FirstDegreeMaterials {
                 .build();
 
         Rutile = new Material.Builder(285, gregtechId("rutile"))
-                .gem()
+                .gem().ore()
                 .color(0xD40D5C).iconSet(GEM_HORIZONTAL)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Titanium, 1, Oxygen, 2)
@@ -666,7 +666,7 @@ public class FirstDegreeMaterials {
                 .setFormula("UO2", true);
 
         Uvarovite = new Material.Builder(333, gregtechId("uvarovite"))
-                .gem()
+                .gem().ore()
                 .color(0xB4ffB4).iconSet(RUBY)
                 .components(Calcium, 3, Chrome, 2, Silicon, 3, Oxygen, 12)
                 .build();
