@@ -684,6 +684,8 @@ public class Materials {
     public static Material Lapotron;
     public static Material UUMatter;
     public static Material PCBCoolant;
+	public static Material PTMetallicPowder;
+	public static Material PDMetallicPowder;
 
     /**
      * Second Degree Compounds

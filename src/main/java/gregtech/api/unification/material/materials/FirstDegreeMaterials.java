@@ -275,7 +275,7 @@ public class FirstDegreeMaterials {
                 .build();
 
         Rutile = new Material.Builder(285, gregtechId("rutile"))
-                .gem()
+                .gem().ore()
                 .color(0xD40D5C).iconSet(GEM_HORIZONTAL)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Titanium, 1, Oxygen, 2)
@@ -666,7 +666,7 @@ public class FirstDegreeMaterials {
                 .setFormula("UO2", true);
 
         Uvarovite = new Material.Builder(333, gregtechId("uvarovite"))
-                .gem()
+                .gem().ore()
                 .color(0xB4ffB4).iconSet(RUBY)
                 .components(Calcium, 3, Chrome, 2, Silicon, 3, Oxygen, 12)
                 .build();
@@ -978,7 +978,6 @@ public class FirstDegreeMaterials {
 
         SodiumPersulfate = new Material.Builder(378, gregtechId("sodium_persulfate"))
                 .fluid()
-                .color(0x045C5C, false)
                 .components(Sodium, 2, Sulfur, 2, Oxygen, 8)
                 .build();
 
@@ -1093,20 +1092,19 @@ public class FirstDegreeMaterials {
 
         TitaniumTetrachloride = new Material.Builder(398, gregtechId("titanium_tetrachloride"))
                 .fluid()
-                .color(0xD40D5C, false)
+                .color(0xD40D5C)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Titanium, 1, Chlorine, 4)
                 .build();
 
         NitrogenDioxide = new Material.Builder(399, gregtechId("nitrogen_dioxide"))
                 .fluid(FluidTypes.GAS)
-                .color(0xF05800).iconSet(GAS)
+                .color(0x85FCFF).iconSet(GAS)
                 .components(Nitrogen, 1, Oxygen, 2)
                 .build();
 
         HydrogenSulfide = new Material.Builder(400, gregtechId("hydrogen_sulfide"))
                 .fluid(FluidTypes.GAS)
-                .color(0xFC5304, false)
                 .components(Hydrogen, 2, Sulfur, 1)
                 .build();
 
@@ -1119,7 +1117,6 @@ public class FirstDegreeMaterials {
 
         SulfuricAcid = new Material.Builder(402, gregtechId("sulfuric_acid"))
                 .fluid(FluidTypes.ACID)
-                .color(0xFC5304, false)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Hydrogen, 2, Sulfur, 1, Oxygen, 4)
                 .build();
@@ -1236,13 +1233,11 @@ public class FirstDegreeMaterials {
 
         HydrochloricAcid = new Material.Builder(419, gregtechId("hydrochloric_acid"))
                 .fluid(FluidTypes.ACID)
-                .color(0xBCBCB5, false)
                 .components(Hydrogen, 1, Chlorine, 1)
                 .build();
 
         Steam = new Material.Builder(420, gregtechId("steam"))
                 .fluid(FluidTypes.GAS, true)
-                .color(0xC4C4C4, false)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Hydrogen, 2, Oxygen, 1)
                 .fluidTemp(373)
@@ -1403,7 +1398,6 @@ public class FirstDegreeMaterials {
 
         FluoroantimonicAcid = new Material.Builder(438, gregtechId("fluoroantimonic_acid"))
                 .fluid(FluidTypes.ACID)
-                .color(0x8CA4C4, false)
                 .components(Hydrogen, 2, Antimony, 1, Fluorine, 7)
                 .build();
 

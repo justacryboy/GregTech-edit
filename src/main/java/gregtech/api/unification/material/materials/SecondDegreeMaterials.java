@@ -20,20 +20,20 @@ public class SecondDegreeMaterials {
 
         Glass = new Material.Builder(2000, gregtechId("glass"))
                 .gem(0).fluid()
-                .color(0xFAFAFA, false).iconSet(GLASS)
+                .color(0xFAFAFA).iconSet(GLASS)
                 .flags(GENERATE_LENS, NO_SMASHING, EXCLUDE_BLOCK_CRAFTING_RECIPES, DECOMPOSITION_BY_CENTRIFUGING)
                 .components(SiliconDioxide, 1)
                 .fluidTemp(1200)
                 .build();
 
         Perlite = new Material.Builder(2001, gregtechId("perlite"))
-                .dust(1)
+                .dust(1).ore()
                 .color(0x1E141E)
                 .components(Obsidian, 2, Water, 1)
                 .build();
 
         Borax = new Material.Builder(2002, gregtechId("borax"))
-                .dust(1)
+                .dust(1).ore()
                 .color(0xFAFAFA).iconSet(FINE)
                 .components(Sodium, 2, Boron, 4, Water, 10, Oxygen, 7)
                 .build();
@@ -345,7 +345,6 @@ public class SecondDegreeMaterials {
 
         LeadZincSolution = new Material.Builder(2045, gregtechId("lead_zinc_solution"))
                 .fluid()
-                .color(0x3C0404, false)
                 .flags(DECOMPOSITION_BY_CENTRIFUGING)
                 .components(Lead, 1, Silver, 1, Zinc, 1, Sulfur, 3, Water, 1)
                 .build();
@@ -390,7 +389,6 @@ public class SecondDegreeMaterials {
 
         LiquidAir = new Material.Builder(2051, gregtechId("liquid_air"))
                 .fluid()
-                .color(0x84BCFC, false)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Nitrogen, 70, Oxygen, 22, CarbonDioxide, 5, Helium, 2, Argon, 1, Ice, 1)
                 .fluidTemp(79)
@@ -448,7 +446,7 @@ public class SecondDegreeMaterials {
                 .build();
 
         RarestMetalMixture = new Material.Builder(2059, gregtechId("rarest_metal_mixture"))
-                .dust()
+                .dust().ore()
                 .color(0x832E11).iconSet(SHINY)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Iridium, 1, Osmium, 1, Oxygen, 4, Water, 1)
