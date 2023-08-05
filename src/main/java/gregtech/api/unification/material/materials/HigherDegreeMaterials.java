@@ -131,7 +131,7 @@ public class HigherDegreeMaterials {
         // FREE ID: 2521
 
         IridiumMetalResidue = new Material.Builder(2522, gregtechId("iridium_metal_residue"))
-                .dust()
+                .dust().ore()
                 .color(0x5C5D68).iconSet(METALLIC)
                 .flags(DISABLE_DECOMPOSITION)
                 .components(Iridium, 1, Chlorine, 3, PlatinumSludgeResidue, 1)
